@@ -1,0 +1,62 @@
+/*el punto . es el selector de clase */
+.titulo-principal{ 
+    /*el titulo lo centraliza un poquito a la izquierda */
+    padding-left: 30px;
+}
+
+
+/*altera el ancho de la imagen */
+#banner {
+    width: 100%;
+}
+
+.principal{
+    /*modifica el color del fondo el body*/
+    background: #CCCCCC;
+    /* espaciamiento interno" */
+    padding: 20px;
+}
+
+/*centra titulos */
+.titulo-centra{
+    text-align: center;
+}
+
+/*centra los párrafos */
+p{
+    text-align: center;
+}
+
+/* altera el color de las etiquetas strong que están dentro de las etiquetas em*/
+em strong{
+    color:red;
+}
+
+/* en la etiqueta de parrafo p mision se pone una fuente de 20 */
+#mision {
+    font-size: 20px;
+}
+.diferenciales{
+    background: #ffffff;
+    padding: 30px;
+}
+
+
+.items{
+    font-size: italic;
+}
+
+ul{
+   /* el display ajusta el ul listas para ajustar los valores a la par */
+    display: inline-block;
+    /* el vertical hace que los datos se alinen arriba */
+    vertical-align: top;
+    width: 20%;
+    margin-right: 20%;
+}
+
+.imagenDiferenciales{
+    width: 50%;
+}
+
+

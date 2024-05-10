@@ -1,0 +1,74 @@
+<!-- recordar siempre las paginas estan creadas por el tipo html doctipe, html, head(idioma titulo y link a css )y body todo lo demas  -->
+<!-- htm version 5   -->
+<!DOCTYPE html> 
+<!-- html   -->
+<html>
+    <!-- todas las etiquetas de contenido    -->
+    <head> 
+        <!-- idioma   -->
+        <meta charset="UTF-8">
+        <title>Productos - Barberia Alura</title>
+        <!-- el reset es un arvhivo en general creado para borrar unas configuracion por defoult que tiene la pagina, siempre ponerlo antes del otro link es basicamente es para que nuestro estilo creado no sea influenciado por el estilo que el navegador agrega por defecto.  -->
+        <link rel="stylesheet" href="reset.css">
+        <!-- link al archivo de estilos css   -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- encabezado del body de la pagina  -->
+        <header>
+            <!-- div es para juntar el logo con las listass y le ponemos un nombre de clase  -->
+            <div class="caja">
+                <!-- en un h1 se coloca la imagen para darle esa importancia de titulo  -->
+                <h1><img src="imagenes/logo.png"></h1>
+                <!-- etiqueta nav para colocar paneles de navegacion  -->
+                <nav> 
+                    <!-- listas  -->
+                    <ul>
+                        <!-- etiqueta a es para referencias links de otras paginas el home debe de estar adentro de a -->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <!-- para referencias paginas externas ponner la direccion completa con http -->
+                        <li><a href="https://www.google.com/">Google</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- cuerpo de la pagina  -->
+        <main>
+            <!-- selector de clase para diferenciar de la otra ul en el header  -->
+            <ul class="productos">
+                <li>
+                    <h2>Cabello</h2>
+                    <img src="imagenes/cabello.jpg" alt="">
+                    <!-- clasedesc y precio para que tengan formato diferente  -->
+                    <p class="Prod-descrip">Con Tijeta o maqina a gusto del cliente</p>
+                    <p class="prod-precio">$10</p>
+
+                </li>
+                <li>
+                    <h2>Barba</h2>
+                    <img src="imagenes/barba.jpg" alt="">
+                    <p class="Prod-descrip">Corte y diseo profesional de barba</p>
+                    <p class="prod-precio">$8</p>
+
+                </li>
+                <li>
+                    <h2>Cabello + Barba</h2>
+                    <img src="imagenes/cabello+barba.jpg" alt="">
+                    <p class="Prod-descrip">paquete completo de cabello y barba</p>
+                    <p class="prod-precio">$10</p>
+
+                </li>
+            </ul>
+        </main>
+        <!-- pie de la pagina -->
+        <footer>
+            <!-- se agrega la imagen  -->
+            <img src="imagenes/logo-blanco.png" >
+            <!-- mensaje de copy rign el sisbolo se especifica en este paquete de idioma con &copy  -->
+            <p class="Copyrig">&copy Copyright Barbería Alura - 2020!</p>
+        </footer>
+    </body>
+</html>

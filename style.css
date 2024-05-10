@@ -1,0 +1,335 @@
+/* se aplica el font de monserrat a todo el boddy */
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+/*el header sera de color plomo */
+header{
+    background-color: #bbbbbb;
+    /* esto es lo que ocupa la pagina*/
+    padding: 20px 0;
+}
+.caja{
+    /* esto es lo que ocupa la pagina referencia a las pantallas 1280*/
+    width: 940px;
+    /* RECORDAR SIEMPRE TRAVESEAR EN INSPECCIONAR en la pag PARA VER EXACTAMENTE DONDE QUEREMOS EL POSICIONAMIENTO si relativo o absoluo*/
+    position: relative;
+     /* margen sup e inf 0 y lateral autom */
+    margin: 0 auto;
+}
+/* letra negrita  <!-- link al archivo de estilos css   position: absolute, yo puedo posicionar mi elemento en cualquier lugar de la página. RECORDAR SIEMPRE TRAVESEAR EN INSPECCIONAR PARA VER EXACTAMENTE DONDE QUEREMOS EL POSICIONAMIENTO si relativo o absoluto*/
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+/*el inlina lo alinea hacia el lado no hacia abajo */
+nav li{
+    display: inline;
+    /* margen y cada cero es  iz dere abajo y arriba*/
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    /* mayuscula */
+    text-transform: uppercase;
+    color:  #000000;    
+    /* letra negrita */
+    font-weight: bold;
+    font-size: 22px;
+    /* text decoration le quita el subrayado y color */
+    text-decoration: none;
+}
+
+/* pase el cursor sobre algún link del menú de navegación, se modificará el color del texto y se le subraya */
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+.productos{
+    /* esto es lo que ocupa la pagina en referencia a las pantallas 1280 */
+    width: 940px;
+    /* margen sup e inf 0 y lateral autom */
+    margin: 0 auto;
+    /* espacio entre el header y el main */    
+    padding: 50px;
+}
+
+.productos li{
+    /* para acomodar los elementos de forma horizontal de la clase productos */
+    display: inline-block;
+    /* centrar */
+    text-align: center;
+    /* que tenga un espaciamiento entre ellos como son 3 elementos 90% div entre 3*/
+    width: 30%;
+     /* aliniacion de los items en forma vertical en parte superior top */
+    vertical-align: top ;
+    /* colorfondo de la imagen con las letras para poder constuir bien los iconos: se elimino
+    background-color: #bbbbbb; */
+    /* margen espacio para las letras y las imagenes 0 vertical 1.5 laterales */
+    margin: 0 1.5%;
+    /* espaciameinto interno de las imagenes y laterales */
+    padding: 30px 20px;
+    /* box sizing esto es para acomodar bien todas las imaenes con las letras darle un buen espaciamiento interno */
+    box-sizing: border-box ;
+    /* configuracion del borde orden:  con 3 pixeles de ancho, sólido, color y entre el padding y el margin */
+    border: 3px solid #000000;
+     /* redondear el borde se puede hacer uno por uno (border-top-left-radius: 10px;) o todos en el mismo radius siguiendo orden (border-radius: 10px 20px 30px 40px 50px) o como en el uso aca todos 10
+     */
+     border-radius: 10px;
+
+}
+
+/* cuando el usuario pase el cursor sobre algún ítem de la lista de productos, se modificará el color del borde */
+.productos li:hover {
+    border-color: #C78C19;
+}
+
+/*algún ítem de la lista productos esté siendo activado (clicado) por el usuario, se modificará el color del borde */
+.productos li:active {
+    border-color: #088C19;    
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* cuando el usuario pase el cursor sobre algún ítem de la lista productos, se modificará el tamaño del texto del h2 */
+.productos li:hover h2 {
+    font-size: 33px;
+}
+
+.Prod-descrip{
+    font-size: 18px;
+}
+
+.prod-precio{
+    font-size: 20px;
+    font-weight: bold;
+    /* para separar el precio de la descripcin un poco */
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    /* se agrega la imagen como fondo y este lo llena completamente */
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.Copyrig{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+
+}
+
+
+/* se elimina
+main{
+      centrar siempre se usa 940 
+     para las pantallas 
+    width: 940px;
+    margin: 0 auto;
+}
+*/
+
+
+form{
+     /* espacios de arriba y abajo */
+    margin: 40px 0;
+}
+
+ /* el from siempre tiene por 
+ default el inline entonces le ponemos un block para que sea hacia abajo */
+/*  mismo formato para los label y p */
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+
+}
+/*  llamamos la clase input padron para agrupar los radio circulares */
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+      /* sirve para cambiar el espaciado interno, entre el contenido y el borde  */
+    padding: 10px 25px;
+    /*  tama;o d los cuadros de texto */
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    /*  propiedad transition para que dure en aparecer el efectpo y all es para que sea a todo*/
+    transition: 1s all;
+    /*  para cambiar el tipo cursor a manita*/
+    cursor: pointer;
+}
+
+.enviar:hover{
+background: darkorange;
+/*  en trasnform se puede poner una escala y tambien rotar con este ejemplo rotate(70deg)  */
+transform: scale(1.2) ;
+}
+
+table {
+    margin: 40px 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+/*  ''''''''''''''''''''''''''''''''''''''''''' */
+/*  Css para nuestro home */
+
+/*Aquí inicia el CSS para nuestra home*/
+.banner{
+    width: 100%;
+}
+
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    /* no hay efecto visual con clear pero hace que la imagen se limpie al rededor*/
+    clear:left;
+}
+
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+
+.principal strong{
+    font-weight: bold;
+}
+
+
+.principal em{
+    font-style: italic;
+}
+
+
+.utensilios{
+    width: 120px;
+    /* coloca la imagen en los laterales
+     como que flota deja los textos al rededor  */
+    float:left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.imagenDiferenciales{
+    width: 60%;
+}
+/* no me lo esta reconociendo */
+.video{
+    width: 560px;
+    margin 1em auto;
+}
+
+/* pseudo-clases para hacer selecciones especiales en los ítems de la lista de los diferenciales y aplicar algunos efectos especiales. */
+/* n    */
+
+
+.diferenciales {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.contenido-diferenciales {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items {
+    line-height: 1.5;
+}
+
+.items:first-child {
+    font-weight: bold;
+}
+
+.imagen-diferenciales {
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000;
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+}
+
+.mapa-contenido {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.items:before{
+    content:"★"
+}
+/* estilo diferente para dispositivos de hasta 480 píxeles de ancho usando media query */
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video {
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+}

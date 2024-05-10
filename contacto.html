@@ -1,0 +1,128 @@
+<!-- recordar siempre las paginas estan creadas por el tipo html doctipe, html, head(idioma titulo y link a css )y body todo lo demas  -->
+<!-- htm version 5   -->
+<!DOCTYPE html> 
+<!-- html   -->
+<html>
+    <!-- todas las etiquetas de contenido    -->
+    <head> 
+        <!-- idioma   -->
+        <meta charset="UTF-8">
+        <title>Contacto - Barberia Alura</title>
+        <!-- el reset es un arvhivo en general creado para borrar unas configuracion por defoult que tiene la pagina, siempre ponerlo antes del otro link es basicamente es para que nuestro estilo creado no sea influenciado por el estilo que el navegador agrega por defecto.  -->
+        <link rel="stylesheet" href="reset.css">
+        <!-- link al archivo de estilos css   -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- encabezado del body de la pagina  -->
+        <header>
+            <!-- div es para juntar el logo con las listass y le ponemos un nombre de clase  -->
+            <div class="caja">
+                <!-- en un h1 se coloca la imagen para darle esa importancia de titulo  -->
+                <!-- propiedad alt es para cuando no carga la imagen si no hay internet por lo menos carga ese nombre -->
+                <h1><img src="imagenes/logo.png" alt="logo de la barberia aluera"></h1>
+                <!-- etiqueta nav para colocar paneles de navegacion  -->
+                <nav> 
+                    <!-- listas  -->
+                    <ul>
+                        <!-- etiqueta a es para referencias links de otras paginas el home debe de estar adentro de a -->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <!-- para referencias paginas externas ponner la direccion completa con http -->
+                        <li><a href="https://www.google.com/">Google</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- cuerpo de la pagina  -->
+        <main>
+            <!-- para crear un formulario  -->
+            <form>
+                <!-- nombre de la caja de texto  -->
+                <label for="nombreapellido">Nombre y apellido</label>
+                <!-- creacion de caja de texto con el id correcpondiente 
+                recordar que los id siempre en minusculas
+                entrada de datos del usuario-->
+                <!-- ponemos la clase input padron para agrupar los radio check box  -->
+                <!-- la propiedad requared es para poner el campo a llenar obligaorio  -->
+                <input type="text" id="nombreapellido" 
+                class="input-padron" required>
+
+                <!-- atributo placeholdel es para ver una guia de como llenar -->
+                <label for="correoelectornico">Correo Electronico</label>
+                <input type="email" id="correoelectornico"
+                class="input-padron" required placeholder="email@dominio.com">
+                
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono"
+                class="input-padron" required placeholder="XXXX XXXX">
+                <!-- creacion de caja de texto dinamico  -->
+                
+                <label for="mensaje">Mensaje</label>
+                <textarea name="" id="mensaje" cols="70" rows="10" class="input-padron" required> 
+                </textarea>
+                <!-- el filde set es para agrupar datos que estan relacionados y no se ultiliza p se utiliza legend -->
+                <fieldset>
+                    <legend>Como le gustaria ser contactado?</legend>
+                    <!--el radio es para crear un check box cisrcular  -->
+                    <!--la propiedad name le dice que solo se puede seleccionar uno en la pagina ya que es el mismo  -->
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    
+                    <!--el atributo checkd es paa dejar marcado una opcion automaticamente ya sea el radio o el checkbox-->    
+                    <label for="Whatsapp-email"><input type="radio" name="contacto" value="Whatsapp" id="radio-Whatsapp" checked>Whatsapp</label>
+                    
+
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono</label>
+
+                </fieldset>
+
+               
+                <fieldset>
+                    <legend>En cual horrio prefiere ser atentido?</legend>
+                    <!--selector lista desplegable -->
+                    <select >
+                        <option>mañana</option>
+                        <option>tarde</option>
+                        <option>noche</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>Le gustaria recibir novedades de la barberia?</label>
+                <!--el submit es para crear el boton enviar -->
+                <input type="submit" value="Enviar Formulario" class="enviar">
+
+            </form>
+            <!-- para crear una tabla  -->
+            <table>
+                <thead><!-- encabezado de tabla -->
+                    <tr><!-- tr rows de filas -->
+                        <th>Dia</th> <!-- th encabezado de tabla  lo centraliza de una vez-->
+                        <th>Hora</th>
+                    </tr>
+                </thead>
+                <tbody><!-- cuerpo de tabla -->
+                    <tr>
+                        <td>Lunes</td><!-- td columnas -->
+                        <td>8am a 8 pm</td>
+                    </tr>
+                    <tr>
+                        <td>Mirecoles</td>
+                        <td>8am a 8 pm</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>8am a 8 pm</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <!-- pie de la pagina -->
+        <footer>
+            <!-- se agrega la imagen  -->
+            <img src="imagenes/logo-blanco.png" alt="logo de la barberia aluera" >
+            <!-- mensaje de copy rign el sisbolo se especifica en este paquete de idioma con &copy  -->
+            <p class="Copyrig">&copy Copyright Barbería Alura - 2020!</p>
+        </footer>
+    </body>
+</html>
